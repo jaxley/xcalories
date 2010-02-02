@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+android:id="@+id/ManageProfileRoot"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+xmlns:android="http://schemas.android.com/apk/res/android"
+>
+	<TextView
+	android:id="@+id/LblProfileName"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Your Name"
+	>
+	</TextView>
+	<EditText
+	android:id="@+id/InpProfileName"
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent">
+	</EditText>
+	<TextView
+	android:id="@+id/LblGender"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Gender"
+	>
+	</TextView>
+	<RadioGroup
+	android:id="@+id/RadioGroup01"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	>
+		<RadioButton
+		android:id="@+id/RBMale"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Male">
+		</RadioButton>
+		<RadioButton
+		android:id="@+id/RBFemale"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Female"
+		android:layout_gravity="right">
+		</RadioButton>
+	</RadioGroup>
+	<TextView
+	android:id="@+id/LblAge"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Age"
+	>
+	</TextView>
+	<EditText
+	android:id="@+id/InpAge"
+	android:layout_width="50sp"
+	android:layout_height="wrap_content"
+	>
+	</EditText>
+			<TextView
+	android:id="@+id/LblWeight"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Weight"
+	>
+	</TextView>
+	<RelativeLayout
+	android:id="@+id/RelativeLayout01"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	>
+		<EditText
+		android:id="@+id/InpWeight"
+		android:layout_width="50sp"
+		android:layout_height="wrap_content"
+		>
+		</EditText>
+		<Spinner
+		android:id="@+id/WeightUnits"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/InpWeight">
+		</Spinner>
+	</RelativeLayout>
+</LinearLayout>
